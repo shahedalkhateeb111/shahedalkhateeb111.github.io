@@ -1,0 +1,202 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: system-ui ;
+}
+body{
+    overflow-x: hidden;
+}
+
+header, main, footer, nav{
+    min-height: 100%;
+    padding: 3%;
+} 
+nav {
+    display: grid;
+    gap: 20px ;
+}
+
+ footer{
+    text-align: left;
+    border: 1px solid white;
+    background-color: white;
+    background-color: aqua;
+
+    
+} 
+
+.div a{
+    left: 20px ;
+    padding: none
+}
+
+div{
+    padding: 0%;
+}
+.mainGrid{
+    display: grid;
+    /* gap: 20px ; */
+
+    place-items: center;
+    text-align: center;
+    /* gap: 20px ; */
+}
+
+
+.hidden{
+    display: none;
+    height: 0;
+    margin-left: -200%;
+}
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    /* width: 20px; */
+}
+
+.imgbox{
+    width: 300px;           /* fast storlek */
+    aspect-ratio: 1 / 1;    /* gör den kvadratisk */
+    overflow: hidden;       /* göm det som sticker ut */
+    border: 1px solid black;
+    padding: 2% ;    
+
+}
+
+
+.imgbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+         /* fyller rutan snyggt */
+}
+
+.menuButton{
+    background-color: transparent;
+    border: none;
+    font-size: 4rem;
+    width: max-content;
+}
+
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    grid-template-columns: 1fr, 1fr;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: 1fr 1fr; 2 kolumner */
+    justify-content: space-between; /* sprider innehållet jämnt */
+
+}
+
+.cartBtn {
+    width: 100%;
+    grid-template-columns: 1fr,1fr;
+}
+.infoBox{
+    display: flex;
+
+    gap: 40px;
+
+    align-items: center;
+}
+
+.menuButton{
+  background-color: white;
+  border-radius: 5px;
+}
+
+@media(min-width:600px){
+
+    nav.hidden {
+        display: none;
+    }
+
+    nav.big {
+        display: grid;
+    }
+
+    .infoPage{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 5%;
+    }
+
+    .infoPage section{
+        padding-inline: 20%;
+    }
+
+
+    nav{
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+        background-color: aqua;
+
+    }
+     
+    .imgbox{
+        padding: 3% ;
+        aspect-ratio: 1/1;
+        background-color: rgb(255, 255, 255);
+        overflow: hidden;
+        
+    }
+    .mainGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        text-align: center;
+        place-items: center;
+        gap:40px;
+
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        
+
+    }
+
+    .menuButton{
+        display: none;
+    }   
+
+    .big{
+        display: grid;}
+    
+    
+
+
+}
+
+
+
+
+
